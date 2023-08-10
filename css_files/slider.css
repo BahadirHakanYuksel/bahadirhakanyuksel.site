@@ -1,0 +1,144 @@
+#slider{
+    width: 70rem;
+    height: 35rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    border: 1px solid grey;
+}
+#slider_menu{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.sliderDiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+.sliderDiv > img{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    z-index:0;
+}
+.sliderDivText{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index:1;
+    transition: 0.3s;
+}
+#slider:hover .sliderDivText{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.slider_active{
+    visibility: visible;
+    opacity: 1;
+}
+.sliderHeader{
+    font-size: 4rem;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    color: lightgrey;
+}
+.sliderText{
+    font-size: 2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-55%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.sliderText > span:nth-child(2){
+    color:rgb(53, 183, 192);
+    font-weight: 1000 !important;
+}
+.sliderText > span{
+    display: block;
+}
+.sliderDivText > a{
+    background-color: rgb(5, 5, 56);
+    color: white;
+    padding: 0.8rem 1.9rem;
+    border-radius: 0.8rem;
+    width: 30rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 1px 1px 2px 1px lightgrey;
+    transition: 0.3s;
+}
+.sliderDivText > a:hover{
+    background-color: rgb(11, 11, 78);
+    box-shadow: 1px 1px 2px 1px white;
+}
+
+#slider > button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(73, 73, 73, 0.2);
+    height: 100%;
+    width: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+}
+#slider:hover > button{
+    visibility: visible;
+    opacity: 1;
+}
+#slider > button:hover{
+    background: rgba(94, 94, 94, 0.2);
+}
+#slider > button > i{
+    color: white;
+}
+#right_slider_button{
+    right: 0;
+
+}
+#left_slider_button{
+    left: 0;
+}
+
+@media (max-width : 720px ){
+#slider{
+    width: 100%;
+}
+}
+@media (max-width : 425px){
+    #slider{
+        height: 28rem;
+    }
+    .sliderText{
+        top: 65%;
+        transform: translateY(-65%);
+    }
+    #sliderText1{
+        top: 75%;
+        transform: translateY(-75%);
+    }
+    .sliderHeader{
+        padding: 0 0.5rem;
+    }
+
+}

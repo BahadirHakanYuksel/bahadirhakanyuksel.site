@@ -1,0 +1,136 @@
+#contactBtn{
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(5, 97, 202);
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 1px 1px white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#contactBtn:hover{
+    background-color: rgb(81, 5, 202);
+}
+
+#contactMe{
+    position: fixed;
+    right: 7rem;
+    bottom: 2rem;
+    background-color: rgb(45,45,45);
+    box-shadow: -1px -1px 1px 1px rgb(0, 119, 255);
+    /* height: 38rem; */
+    height: 0rem;
+    width: 30rem;
+    display: none;
+    opacity: 0;
+    transition: 0.8s;
+}
+#contactMe > header > span{
+    background: linear-gradient(to right,rgb(0, 162, 255),rgb(74, 24, 212));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+#contactMe > header {
+    background-color: rgb(37, 37, 37);
+    margin-bottom: 3rem;
+    padding: 0.4rem 1.2rem;
+}
+#form{
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.inputMain{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2.5rem;
+    border: 2px solid grey;
+}
+.inputMain:nth-child(3){
+    height: 10rem;
+}
+.inputMain > input,
+.inputMain > textarea{
+    border: 0;
+    outline: 0;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+}
+.inputMain > textarea{
+    padding: 0.8rem;
+}
+.alertMessage{
+    position: absolute;
+    height: 1.8rem;
+    top: -2rem;
+    right: 0;
+    font-size: 1.1rem;
+    color: rgb(241, 10, 41);
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.288);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#sendMailBtn{
+    width: 100%;
+    cursor: pointer;
+    background: linear-gradient(to left , rgb(60, 18, 175),rgb(0, 162, 255) );
+    color: white;
+    height: 3.6rem;
+    border-radius: 1.35rem;
+    transition: 0.3s;
+    border-bottom: 2px solid white;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#sendMailBtn:hover{
+    background: linear-gradient(to left , rgb(74, 24, 212),rgb(0, 142, 224) );
+}
+
+.btnAnimation{
+    position: absolute;
+    bottom: 0;
+    left: -10rem;
+    background: linear-gradient(to left, rgb(1, 55, 170),rgb(88, 1, 201));
+    width: 10rem;
+    height: 100%;
+    transition: 3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+
+@media(max-width : 375px){
+    #contactMe{
+        bottom: 7.5rem;
+        width: 100%;
+        left: 0;
+    }
+}

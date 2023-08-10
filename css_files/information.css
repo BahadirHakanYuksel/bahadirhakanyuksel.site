@@ -1,0 +1,34 @@
+#information{
+    width: 100%;
+    padding: 5rem 5%;
+    margin-top : 4rem;
+}
+#information > header{
+    font-size: 4rem;
+    background: linear-gradient(to left,rgb(43, 129, 209),rgb(53, 183, 192));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid lightgrey;
+}
+#information > p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    line-height: 2.5rem;
+}
+#information > .infoLink{
+    background: linear-gradient(red,darkred);
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.8rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    transition: 0.3s;
+}
+#information > .infoLink:hover{
+    background: linear-gradient(red,red);
+}

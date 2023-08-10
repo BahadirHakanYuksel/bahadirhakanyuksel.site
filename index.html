@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahadır Hakan Yüksel</title>
+    <link rel="icon" href="imgs/bhyLogo.png" type="imgs/png">
+    <link rel="stylesheet" href="css_files/main.css">
+    <link rel="stylesheet" href="css_files/contact.css">
+    <!-- font_awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="Home">
+    <nav id="navbar">
+        <a href="#Home" id="logo">
+            bhy.
+        </a>
+        <div class="menu">
+            <a href="#Home" class="menu_e active">Home</a>
+            <a href="#information" class="menu_e">Biography</a>
+            <a href="https://github.com/BahadirHakanYuksel" target="_blank" class="menu_e ">Projects</a>
+        </div>
+        <i class="fa-solid fa-bars" id="responsive_btn"></i>
+    </nav>
+    <main id="content">
+        <div id="pages">
+            <div class="page" id="home">
+                <div id="slider">
+                    <div id="slider_menu">
+                        <div class="sliderDiv slider_active">
+                            <div class="sliderDivText">
+                                <p class="sliderHeader">WELCOME To My Blog</p>
+                                <p class="sliderText" id="sliderText1">
+                                    <span>Bahadır Hakan Yüksel</span>
+                                    <span>Computer Engineer</span>
+                                </p>
+                            </div>
+                            <img src="imgs/slider1.jpg">
+                        </div>
+                        <div class="sliderDiv">
+                            <div class="sliderDivText">
+                                <p class="sliderHeader">You Code Too</p>
+                                <p class="sliderText">HTML CSS JS C BOOTSTRAP</p>
+                            </div>
+                            <img src="imgs/slider2.jpg">
+                        </div>
+                        <div class="sliderDiv">
+                            <div class="sliderDivText">
+                                <p class="sliderHeader">My Projects're on the Git-Hub</p>
+                                <a href="https://github.com/BahadirHakanYuksel" target="_blank" class="sliderText">
+                                    <span>Visit My Git-Hub Profile</span>
+                                </a>
+                            </div>
+                            <img src="imgs/slider3.jpg">
+                        </div>
+                    </div>
+                    <button id="right_slider_button">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <button id="left_slider_button">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                </div>
+                <div id="information">
+                    <header>Who is Bahadır Hakan ? </header>
+                    <p>Bahadır started software at the age of 19. Writing code is a lot of fun for him. He is dedicated to improving himself every day. He is currently a 1st year Computer Engineering student at KTO KARATAY UNIVERSITY and is 20 years old.  So far, he has learned html css JavaScript bootstrap and c programming languages and has reached a certain level. Let's write code :)</p>
+                    <p>At the same time, Bahadır, who was interested in the instrument during his high school years, has improved himself in the field of music. You can visit and listen to the Youtube channel.</p>
+                    <a href="https://www.youtube.com/channel/UC7aHlVRJzsV-NhagmTpLipw" target="_blank" class="infoLink">Youtube Channel</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- message Section -->
+    <i title="Contact Me :)" id="contactBtn" class="fa-regular fa-message"></i>
+    <div id="contactMe">
+            <header><span>Contact Me</span></header>
+            <div id="form">
+                <div class="inputMain">
+                    <input class="input" id="name_surname" type="text" placeholder="Name,Surname">
+                    <span class="alertMessage">Enter Incorrectly !</span>
+                </div>
+                <div class="inputMain">
+                    <input class="input" id="email" autocomplete="off" type="text" placeholder="E-Mail">
+                    <span class="alertMessage">Enter Incorrectly !</span>
+                </div>
+                <div class="inputMain">
+                    <textarea class="input" id="message" placeholder="Message"></textarea>
+                    <span class="alertMessage">Enter Incorrectly !</span>
+                </div>
+                <button id="sendMailBtn">Send
+                    <div class="btnAnimation">Gönderiliyor ...</div>
+                </button>
+            </div>
+    </div>
+
+
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("IOxXHugPWrSplzXaL");
+    })();
+    </script>
+    <script src="js_files/mail.js"></script>
+    <script src="js_files/responsive.js"></script>
+    <script src="js_files/slider.js"></script>
+</body>
+</html>
