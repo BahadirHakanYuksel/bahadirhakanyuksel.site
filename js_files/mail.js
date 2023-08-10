@@ -104,8 +104,8 @@ function sendMail(nameSurname,email,message){
         message : message
     }
 
-    const serviceID = "service_jh05b7u"
-    const templateID = "template_5h7ivq8"
+    const serviceID = "*************"
+    const templateID = "************"
     emailjs.send(serviceID,templateID,params)
     .then(res => {
         document.getElementById('name_surname').value = ""
